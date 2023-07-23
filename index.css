@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #6ca8da, #72aebd);
+}
+.theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.source {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  border-radius: 50%;
+}
+.topnav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  background: transparent blur;
+  padding: 20px 10px;
+  font-size: 17px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 20px 16px;
+  gap: 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.spinner-1 {
+  animation: s1 5s infinite;
+}
+@keyframes s1 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem;
+}
+.container .box:hover .imgBox {
+  transform: translate(-2.5rem, -2.5rem);
+}
+.container .box:hover .content {
+  transform: translate(4.5rem, 4.5rem);
+}
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+.imgBox img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  resize: both;
+  border-radius: 25px;
+}
+.speakerList {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background: rgba(253, 253, 253, 0.3);
+  padding: 0px;
+  margin-left: 150px;
+  border-radius: 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+.certify {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: space-between;
+}
+.certifyImg {
+  border-radius: 20px;
+}
+.lettercon {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: justify;
+  justify-content: center;
+}
+.certify:hover {
+  scale: 1.05;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  scale: 1.1;
+}
+.regbtn {
+  padding: 20px;
+  font-size: larger;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 25px;
+}

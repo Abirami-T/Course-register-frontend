@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>abi restuarent</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      /* CSS code for styling goes here */
+
+      .reservation-form {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .form-group {
+        width: 47%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: large;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      select {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        width: 100%;
+        background-color: blue;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      form {
+        padding: 20px;
+      }
+      .homepg {
+        display: flex;
+        padding-top: 180px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .homecon {
+        width: 700px;
+        height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 3px 3px 5px rgba(31, 38, 135, 0.37);
+        border-left: 0.5px solid rgba(255, 255, 255, 0.6);
+        border-top: 0.5px solid rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="theme">
+        <div class="spinner-1">
+          <img
+            class="logo"
+            width="50px"
+            height="50px"
+            src="./logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="source">Sourcera</div>
+      </div>
+      <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./register.html">Register</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./signin.html">logout</a>
+      </div>
+    </div>
+    <div class="homepg">
+      <div class="homecon">
+        <form class="reservation-form">
+          <div class="form-group">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="room-type">Conference Course :</label>
+            <select id="room-type" name="room-type">
+              <option value="Single">Full Stack</option>
+              <option value="Luxury">Artificial Intelligent</option>
+              <option value="Quad">Machine Learning</option>
+              <option value="Visitor">Deep Learning</option>
+              <option value="Deluxe">Block Chain</option>
+              <option value="Deluxe">Big Data</option>
+              <option value="Standard">Internet of Things</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Phone no. :</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="check-in">Language :</label>
+            <select id="room-type" name="room-type">
+              <option value="Single">English</option>
+              <option value="Luxury">Tamil</option>
+              <option value="Quad">Hindi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="check-out">College Name :</label>
+            <input type="text" id="check-out" name="check-out" />
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Reserve" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <marquee class="availscroll" behavior="scroll" direction="right">
+      <h1>!!**🎀**Limited Seats only Available**🎀**!!</h1>
+    </marquee>
+  </body>
+</html>

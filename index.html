@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="theme">
+        <div class="spinner-1">
+          <img
+            class="logo"
+            width="50px"
+            height="50px"
+            src="./logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="source">Sourcera</div>
+      </div>
+      <div class="menu">
+        <a href="./index.html" >Home</a>
+        <a href="#speaker" >Speaker</a>
+        <a href="./register.html" >Register</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./signin.html">logout</a>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="certify">
+        <div class="lettercon">
+          <h2>Certified Conference</h2>
+          <h3>Learn in-demand skills through certified people conference and get Valueable Ideas</h3>
+          <a class="regbtn" href="./register.html">Register</a>
+        </div>
+        <div class="certifyImg">
+          <img
+            src="./certify.png"
+            width="250px"
+            height="250px"
+            alt="certify"
+          />
+        </div>
+      </div>
+      <div class="certify">
+        <div class="lettercon">
+          <h2>Placement  Conference</h2>
+          <h3>Learn in-demand skills through certified people conference and get good placement offers</h3>
+          <a class="regbtn" href="./register.html">Register</a>
+        </div>
+        <div class="certifyImg">
+          <img
+            src="./certify.png"
+            width="250px"
+            height="250px"
+            alt="certify"
+          />
+        </div>
+      </div>
+    </div>
+<br id="speaker"><br><br>
+    <div class="speakerList">
+      <div class="container" id="items">
+    </div>
+    <script>
+      const items = [
+  {
+    id: 1,
+    name: "Mr.x1",
+    field: "s/w engineer",
+    Image: "./asset/1.png"
+  },
+  {
+    id: 2,
+    name: "Mr.x2",
+    field: "Test engineer",
+    Image: "./asset/2.png"
+  },
+  {
+    "id": 3,
+    "name": "Mr.x3",
+    "field": "s/w engineer",
+    "Image": "./asset/3.png"
+  },
+  {
+    "id": 4,
+    "name": "Mr.x4",
+    "field": "s/w engineer",
+    "Image": "./asset/4.png"
+  },
+  {
+    "id": 5,
+    "name": "Mr.x5",
+    "field": "s/w engineer",
+    "Image": "./asset/5.png"
+  },
+  {
+    "id": 6,
+    "name": "Mr.x6",
+    "field": "s/w engineer",
+    "Image": "./asset/6.png"
+  },
+  {
+    "id": 7,
+    "name": "Mr.x7",
+    "field": "s/w engineer",
+    "Image": "./asset/7.png"
+  },
+  {
+    "id": 8,
+    "name": "Mr.x8",
+    "field": "s/w engineer",
+    "Image": "./asset/8.png"
+  }
+];
+
+      const itemElements = items.map((item) => {
+        return `
+          <div class="box">
+          <div class="imgBox">
+            <img src="${item.Image}" alt="${item.name}" />
+          </div>
+          <div class="content">
+            <h2>${item.name}</h2>
+            <span>${item.field}</span>
+          </div>
+        </div>
+      </div>
+        `
+      });
+      console.log(itemElements);
+      document.getElementById("items").innerHTML = itemElements.join("");
+    </script>
+    <footer>
+      <h1>Speakers Details</h1>
+      <br>
+      <br><br><br><br>
+      <p>&copy; 2023 Conference Reservation Website</p>
+    </footer>
+  </body>
+</html>
